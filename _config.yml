@@ -20,7 +20,7 @@ user:
   name: "jjlee"
   pic: /assets/img/cat.jpg
   picAlt: "ㅎㅇ"
-  job: 데이터/AI/딥러닝
+  job: "데이터/AI/딥러닝"
 #  aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
