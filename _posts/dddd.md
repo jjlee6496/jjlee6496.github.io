@@ -1,0 +1,57 @@
+---
+title: "OS정리1"
+categories: ['전공']
+output: 
+  prettydoc::html_pretty:
+    theme: leonids
+    highlight: github
+---
+<style type="text/css">
+  @font-face {
+      font-family: 'twayair';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') 
+      format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  body{
+    font-family: 'twayair';
+  }
+</style>
+
+# OS란?
+* 운영체제란 하드웨어를 손쉽게 그리고 효율적으로 사용 가능하게 하는 Abstraction을 제공한다.
+
+* 자원의 공유 및 분배를 위한 Policy를 결정한다
+  + Policy의 예: FIFO, LRU
+  + 설계 결정(Design Decisions)이 중요
+      - 데이터센터, 자율주행자동차, 스마트폰에 사용되는 Policy가 다르다.
+      - Policy에 따라 성능, 배터리, 안전 정도가 다름
+
+# Abstraction
+
+* CPU: "Process" - CPU와 같은 하드웨어 component나 User로 하여금 각 Program을 구분하여 인식/실행 할 수 있도록 하기 위함.
+
+* Meomory:" Address space"(CPU가 차지하는 공간) - 실행 context 보호, 개인정보 보호 등의 목적을 위해 서로의 address space 분리가 필요
+
+* Disk: "file" - Process는 실제 저장되는 위치를 모르기 때문에 어디까지가 User나 Process의 Binary Data가 저장되어 있는 건지 구분하고 관리 하기 위해 필요
+
+* Network: "Port" - 어떤 User/Process가 통신의 대상인지 구분이 필요하기 때문에 필요
+
+***
+
+# Scheduling
+
+* 스케쥴링 없이 일괄처리(Batch)하게 되면 1가지 job이 끝나야 다음 job이 실행 가능, 결과가 나올 때까지 중간에 User-Interaction이 불가하다.
+   ![acesstime](C:/Users/이정진/Desktop/os정리/io_cost.png)
+   - storage type에 따라 Acesstime 즉 I/O 비용이 매우 커진다-> Idle 상태가 길어짐
+
+* Spooling - 이에 대한 해결책으로 I/O와 computation을 동시에 진행 가능하도록 하는 방법
+  - ex)프린터는 인쇄문서를 디스크/메모리의 버퍼에 로드해서 인쇄하는 동안 다른 작업 수행이 가능하다.
+
+
+* Multiprogramming - batch에서 job 하나하나 Memory에 load하는 시간 overhead를 줄이기 위해 여러가지 program을 동시에 memory에 load.
+  - 현재 job이 I/O를 할 경우, 다음 job을 실행 but 실행 중 User-Interaction 여전히 불가.
+  - voluntary yield에 의존하기 때문에 우선순위가 필요. 공평성 문제 발생
+
+* Multitasking - 
