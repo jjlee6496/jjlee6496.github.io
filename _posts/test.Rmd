@@ -1,5 +1,6 @@
 ---
 title: "OS정리1"
+categories: [dev]
 output: 
   prettydoc::html_pretty:
     theme: leonids
