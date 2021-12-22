@@ -18,7 +18,7 @@ cusdis:
 
 user:
   name: "jjlee"
-  pic: "https://commons.wikimedia.org/wiki/File:J_cursiva.gif"
+  pic: /assets/img/jj.gif
   picAlt: "ㅎㅇ"
   job: "데이터/AI/딥러닝"
 #  aboutme: true # comment this out if you don't need the 'about' page.
