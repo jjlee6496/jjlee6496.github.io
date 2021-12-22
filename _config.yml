@@ -18,7 +18,7 @@ cusdis:
 
 user:
   name: "jjlee"
-  pic: /assets/img/jj.png
+  pic: /assets/img/cat.jpg
   picAlt: "ㅎㅇ"
   job: "Data/ML/DL"
 #  aboutme: true # comment this out if you don't need the 'about' page.
