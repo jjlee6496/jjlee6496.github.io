@@ -12,7 +12,7 @@ timezone:
 favicon: /assets/img/favicon.ico
 
 google_analytics: G-LNQ1ZTX9VN
-disqus_shortname: #disqus shortname
+disqus_shortname: jjleeblog
 cusdis:
     app_id: #your cusdis app_id
 
