@@ -3,6 +3,9 @@
 {% else %}
 {% capture title %}{{ site.title }}{% endcapture %}
 {% endif %}
+{% if page.use_math %}
+  {% include mathjax_support.html %}
+{% endif %}
 
 <head>
   <title>{{ title }}</title>
