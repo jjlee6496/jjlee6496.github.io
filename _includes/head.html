@@ -2,9 +2,9 @@
 {% capture title %}{{ page.title }} | {{ site.title }}{% endcapture %}
 {% else %}
 {% capture title %}{{ site.title }}{% endcapture %}
-{% else %}
+{% endif %}
 {% if page.use_math %}
-  {% include mathjax_support.html %}
+{% include mathjax_support.html %}
 {% endif %}
 
 <head>
