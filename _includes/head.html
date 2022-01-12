@@ -2,7 +2,7 @@
 {% capture title %}{{ page.title }} | {{ site.title }}{% endcapture %}
 {% else %}
 {% capture title %}{{ site.title }}{% endcapture %}
-{% endif %}
+{% else %}
 {% if page.use_math %}
   {% include mathjax_support.html %}
 {% endif %}
