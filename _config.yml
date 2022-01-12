@@ -44,3 +44,10 @@ show_drafts: null
 limit_posts: 0
 future:      false
 unpublished: false
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
