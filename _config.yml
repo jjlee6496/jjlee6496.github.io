@@ -45,8 +45,7 @@ limit_posts: 0
 future:      false
 unpublished: false
 
-# Conversion
-markdown: kramdown
+# Math equation
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
